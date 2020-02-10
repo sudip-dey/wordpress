@@ -1,7 +1,5 @@
 <?php
 
-
-
 require get_theme_file_path('.\inc\search-route.php');
 
 function university_files() {
