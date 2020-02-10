@@ -188,7 +188,7 @@ function university_custom_hook1_content(){
 function university_custom_hook_one_filter( $txt ){
 	return $txt." -- modified";
 }
-apply_filter( 'custom_hook_one_filter', 'university_custom_hook_one_filter' );
+add_filter( 'custom_hook_one_filter', 'university_custom_hook_one_filter' );
 add_action( 'wp_custom_hook', 'university_custom_hook1' );
 
 function university_custom_hook2(){
