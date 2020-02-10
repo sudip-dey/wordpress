@@ -1,6 +1,6 @@
 <?php
 
-require get_theme_file_path('.\inc\search-route.php');
+require get_theme_file_path('./inc/search-route.php');
 
 function university_files() {
   wp_enqueue_script('main-university-js', get_theme_file_uri('/js/scripts-bundled.js'), NULL, '1.0', true);
@@ -174,6 +174,14 @@ function university_widget_init(){
 }
 
 add_action( 'widgets_init', 'university_widget_init' );
+
+/* Custom Hook*/
+
+function university_custom_hook(){
+	echo "<h1>Custom Hook</h1>";
+}
+
+add_action( 'wp_custom_hook', 'university_custom_hook' );
 
 
 

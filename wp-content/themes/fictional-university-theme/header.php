@@ -4,6 +4,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
+    <?php do_action('wp_custom_hook'); ?>
   </head>
   <body <?php body_class(); ?>>
     <header class="site-header">
