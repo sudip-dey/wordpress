@@ -14,29 +14,6 @@ const sass = require('gulp-sass');
 const del = require('del');
 var GulpSSHDeploy = require('gulp-ssh-deploy');
 
-var options = {
-  "host": "54.91.145.149",
-  "port": 22,
-  //"package_json_file_path": "package.json",
-  "source_files": ".",
-  "remote_directory": "/home/ec2-user/wp_sync",
-  "username": "ec2-user",
-  "ssh_key_file": "d:/Sudip_AWS_New.ppk",
-  /*"releases_to_keep": 3,
-  "group": "remote-group",
-  "permissions": "ugo+rX",
-  "package_task": "someTask"*/
-};
-
-// prompt for SSH credentials
-gulp.task('login:production', deploy.login('54.91.145.149'))
-
-// deploy files to SSH host
-// IMPORTANT: Don't forget to add login task as dependency
-gulp.task('deploy:production', ['login:production'], function () {
-    return gulp.src('d:/wordpress/**/*').pipe(deploy['54.91.145.149'].dest('/home/ec2-user/wp_sync'))
-})
-
 /*gulp.task('styles', function() {
   return gulp.src(settings.themeLocation + 'css/style.css')
     .pipe(postcss([cssImport, mixins, cssvars, nested, rgba, colorFunctions, autoprefixer]))
