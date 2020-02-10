@@ -177,13 +177,12 @@ add_action( 'widgets_init', 'university_widget_init' );
 
 /* Custom Hook*/
 
-function university_custom_hook(){
-	echo "<h1>Custom Hook</h1>";
+function university_custom_hook1(){
+	echo "<h1>Custom Hook - Text added by Person 1</h1>";
 }
+add_action( 'wp_custom_hook', 'university_custom_hook1' );
 
-add_action( 'wp_custom_hook', 'university_custom_hook' );
-
-
-
-
-
+function university_custom_hook2(){
+	echo "<h1>Custom Hook - Text added by Person 2</h1>";
+}
+add_action( 'wp_custom_hook', 'university_custom_hook2' );
