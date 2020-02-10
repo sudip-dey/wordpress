@@ -190,7 +190,7 @@ function university_custom_hook2($txt){
 	echo $txt;
 }
 
-function university_custom_hook1_content(){
+function university_custom_hook2_content(){
 	$txt = "<h1>Custom Hook - Text added by Person 2</h1>";
 	return apply_filter('custom_hook_one_filter', $txt);
 }
