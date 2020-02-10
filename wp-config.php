@@ -82,13 +82,6 @@ define( 'WP_DEBUG', false );
 /* Multisite */
 define( 'WP_ALLOW_MULTISITE', TRUE );
 
-define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', false);
-define('DOMAIN_CURRENT_SITE', 'ec2-3-84-110-208.compute-1.amazonaws.com');
-define('PATH_CURRENT_SITE', '/wordpress/');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);
-
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
