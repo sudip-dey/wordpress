@@ -177,8 +177,8 @@ add_action( 'widgets_init', 'university_widget_init' );
 
 /* Custom Hook*/
 
-function university_custom_hook1($txt){
-	echo $txt;
+function university_custom_hook1(){
+	echo university_custom_hook1_content();
 }
 function university_custom_hook1_content(){
 	$txt = "<h1>Custom Hook - Text added by Person 1</h1>";
@@ -186,8 +186,8 @@ function university_custom_hook1_content(){
 }
 add_action( 'wp_custom_hook', 'university_custom_hook1' );
 
-function university_custom_hook2($txt){
-	echo $txt;
+function university_custom_hook2(){
+	echo university_custom_hook2_content();
 }
 
 function university_custom_hook2_content(){
