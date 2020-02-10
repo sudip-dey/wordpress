@@ -184,6 +184,11 @@ function university_custom_hook1_content(){
 	$txt = "<h1>Custom Hook - Text added by Person 1</h1>";
 	return apply_filters('custom_hook_one_filter', $txt);
 }
+
+function university_custom_hook_one_filter( $txt ){
+	return $txt." -- modified";
+}
+apply_filter( 'custom_hook_one_filter', 'university_custom_hook_one_filter' );
 add_action( 'wp_custom_hook', 'university_custom_hook1' );
 
 function university_custom_hook2(){
