@@ -178,4 +178,10 @@ function university_widget_init(){
 
 add_action( 'widgets_init', 'university_widget_init' );
 
+/* Use of the Custom Hook */
 
+add_action( 'university_custom_hook', 'university_custom_hook_one' );
+
+function university_custom_hook_one(){
+  echo "<h1>This is from the Custom Hook ONE</h1>";
+}
