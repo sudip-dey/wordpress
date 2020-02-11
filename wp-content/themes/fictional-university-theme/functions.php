@@ -183,7 +183,8 @@ add_action( 'widgets_init', 'university_widget_init' );
 add_action( 'university_custom_hook', 'university_custom_hook_one' );
 
 function university_custom_hook_one(){
-  echo "<h1>This is from the Custom Hook ONE</h1>";
+  $txt = "<h1>This is from the Custom Hook ONE</h1>";
+  echo apply_filters( 'university_custom_filter_one', $txt );
 }
 
 // Plugin 2
@@ -191,4 +192,10 @@ add_action( 'university_custom_hook', 'university_custom_hook_two' );
 
 function university_custom_hook_two(){
   echo "<h1>This is from the Custom Hook TWO</h1>";
+}
+
+// Plugin 3
+add_filter( 'university_custom_filter_one', 'university_custom_filter_func_one' );
+function university_custom_filter_func_one( $txt ){
+  return "Modified using the filter. Old text - ". $txt;
 }
