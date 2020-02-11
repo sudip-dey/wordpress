@@ -17,17 +17,7 @@
     </div>
 
     <div class="container" style="border: 1px solid red;">
-        <div class="row">
-            <div class="col-sm-4">
-                One of three columns
-            </div>
-            <div class="col-sm-4">
-                One of three columns
-            </div>
-            <div class="col-sm-4">
-                One of three columns
-            </div>
-        </div>
+        <?php dynamic_sidebar('widget_area_one'); ?>    
     </div>
 
     <div class="container container--narrow page-section" style="border: 1px solid red;">
