@@ -6,7 +6,7 @@
   while(have_posts()) {
     the_post(); ?>
     
-    <div class="page-banner">
+    <div class="page-banner">   
       <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);"></div>
       <div class="page-banner__content container container--narrow">
         <h1 class="page-banner__title"><?php the_title(); ?></h1>
@@ -16,7 +16,7 @@
       </div>  
     </div>
 
-    <div class="container container--narrow page-section">
+    <div class="container container--narrow page-section" style="border: 1px solid red;">
     
     <?php
       $theParent = wp_get_post_parent_id(get_the_ID());
