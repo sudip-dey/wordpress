@@ -156,8 +156,8 @@ add_action( 'admin_menu', 'university_register_my_custom_menu_page' );
 function university_widget_init(){
   register_sidebar(
       array(
-        'name' => 'Widegt Area Two',
-        'id' => 'widget_area_two',
+        'name' => 'Widegt Area One',
+        'id' => 'widget_area_one',
         'before_widget' => '<aside>',
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="headline headline--small widgetarea2">',
