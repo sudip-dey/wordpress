@@ -16,6 +16,20 @@
       </div>  
     </div>
 
+    <div class="container" style="border: 1px solid red;">
+        <div class="row">
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
     <div class="container container--narrow page-section" style="border: 1px solid red;">
     
     <?php
