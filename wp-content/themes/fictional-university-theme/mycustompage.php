@@ -17,6 +17,7 @@
     </div>
 
     <div class="container" style="border: 1px solid red;">
+        <h1>Recent Posts</h1>
         <?php dynamic_sidebar('widget_area_one'); ?>    
     </div>
 
