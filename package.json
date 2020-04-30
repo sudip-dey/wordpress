@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "browser-sync-webpack-plugin": "^2.2.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.1",
     "nvm-win": "^0.2.4",
     "slick-carousel": "^1.8.1"
